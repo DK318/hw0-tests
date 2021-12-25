@@ -1,0 +1,70 @@
+name:                hw0-tests
+version:             0.1.0.0
+github:              "DK318/hw0-tests"
+license:             BSD3
+author:              "Leonid Vasilev"
+maintainer:          "vasiklenka@gmail.com"
+copyright:           "2021 Leonid Vasilev"
+
+extra-source-files:
+- README.md
+
+description:         Please see the README on GitHub at <https://github.com/DK318/hw0-tests#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+tests:
+  t1:
+    main:                HW0T1_assessor.hs
+    source-dirs:         test/T1
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - hw0-tests
+    - QuickCheck
+  t2:
+    main:                HW0T2_assessor.hs
+    source-dirs:         test/T2
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - hw0-tests
+    - QuickCheck
+  t3:
+    main:                HW0T3_assessor.hs
+    source-dirs:         test/T3
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - hw0-tests
+    - QuickCheck
+  t4:
+    main:                HW0T4_assessor.hs
+    source-dirs:         test/T4
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - hw0-tests
+    - QuickCheck
+  t5:
+    main:                HW0T5_assessor.hs
+    source-dirs:         test/T5
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - hw0-tests
+    - QuickCheck
